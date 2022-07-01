@@ -1,10 +1,16 @@
+body {
+    display: grid;
+    width: 750px;
+    height: 600px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 100px;
+}
 .container {
     display: grid;
     width: 750px;
     height: 600px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 80px 1fr 1fr 100px;
-    gap: 1rem;
 }
 .header {
     background: #d7d7d7;
