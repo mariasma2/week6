@@ -1,5 +1,6 @@
 body {
-    margin: 0px;
+    width: 100%;
+    margin: 0;
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
@@ -14,83 +15,42 @@ button {
 }
 .header {
     display: grid;
-    grid-template-columns: 60px 5fr 6fr 7fr;
-    grid-template-areas: '. header-logo . header-nav ';
+    grid-template-columns: 1fr auto;
     min-height: 100px;
+    padding: 0 60px;
     align-items: center;
+    justify-items: stretch;
     background-color: #f5f5f5;
 }
-.header-logo {
-    grid-area: header-logo;
+.header-nav__link {
+  margin-left: 20px;
+  color: #292f36;
+  text-decoration: none;
 }
-.header-nav {
-    grid-area: header-nav;
+.header-nav__link--active {
+  color: #cda274;
 }
-.content-1 {
-    margin-left: 20px;
-    color: #cda274;
-    text-decoration: none;
-}
-.content-2 {
-    margin-left: 20px;
-    color: #292f36;
-    text-decoration: none;
-}
-.content-3 {
-    margin-left: 20px;
-    color: #292f36;
-    text-decoration: none;
-}
-.content-4 {
-    margin-left: 20px;
-    color: #292f36;
-    text-decoration: none;
-}
-.content-5 {
-    margin-left: 20px;
-    color: #292f36;
-    text-decoration: none;
-}
+
 .main {
     display: grid;
     grid-template-rows: 350px 170px 100px;
-    grid-template-columns: 60px 5fr 6fr 6fr;
     background-image: url(images/IMAGE.png);
-    grid-template-areas: '. header-title header-title .' '. header-subtitle header-subtitle .' '. click . .';
     height: 832px;
-    width: 1280px;
-    left: 0;
-    right: 0;
-    top: 0px;
+    padding: 0 60px;
 }
 .header-title {
-    grid-area: header-title;
     color: #292f36;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 90px;
-    line-height: 96px;
-    justify-items: start;
-    align-items: start;
+    font: normal 90px/96px 'DM Serif Display', serif;
     margin-top: 140px;
+    align-items: center;
 }
 .header-subtitle {
-    grid-area: header-subtitle;
     color: #4d5053;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 33px;
+    font: normal 22px/33px 'Jost', serif;
 }
 #click {
-    grid-area: click;
     height: 71px;
     width: 180px;
-    left: 0;
-    right: 0;
-    top: 0;
     background: #292f36;
     border: 2px solid #292f36;
     border-radius: 18px;
